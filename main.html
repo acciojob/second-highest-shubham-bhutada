@@ -11,7 +11,7 @@
 		function secondHighest(arr) {
 			//Write your code here
 			if(arr.length == 0 || arr.length == 1) {
-				return Infinity;
+				return -Infinity;
 			}
 			// else if {
 			// 	let flag = true;
@@ -23,7 +23,7 @@
 			// }
 			arr.sort((a,b) => a-b)
 			if(arr[0] == arr[arr.length-1]) {
-				return Infinity;
+				return -Infinity;
 			}
 			return arr[arr.length-2];
 		}
